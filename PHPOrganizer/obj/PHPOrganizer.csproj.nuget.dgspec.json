@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\thoma\\OneDrive\\Escritorio\\PhpOrganizer\\PHPOrganizer\\PHPOrganizer.csproj": {}
+    "C:\\Users\\thoma\\OneDrive\\Escritorio\\PHP-xampp-Organizer\\PHPOrganizer\\PHPOrganizer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\thoma\\OneDrive\\Escritorio\\PhpOrganizer\\Entidades\\Entidades.csproj": {
+    "C:\\Users\\thoma\\OneDrive\\Escritorio\\PHP-xampp-Organizer\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\thoma\\OneDrive\\Escritorio\\PhpOrganizer\\Entidades\\Entidades.csproj",
+        "projectUniqueName": "C:\\Users\\thoma\\OneDrive\\Escritorio\\PHP-xampp-Organizer\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "C:\\Users\\thoma\\OneDrive\\Escritorio\\PhpOrganizer\\Entidades\\Entidades.csproj",
+        "projectPath": "C:\\Users\\thoma\\OneDrive\\Escritorio\\PHP-xampp-Organizer\\Entidades\\Entidades.csproj",
         "packagesPath": "C:\\Users\\thoma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\thoma\\OneDrive\\Escritorio\\PhpOrganizer\\Entidades\\obj\\",
+        "outputPath": "C:\\Users\\thoma\\OneDrive\\Escritorio\\PHP-xampp-Organizer\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\thoma\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -59,14 +59,14 @@
         }
       }
     },
-    "C:\\Users\\thoma\\OneDrive\\Escritorio\\PhpOrganizer\\PHPOrganizer\\PHPOrganizer.csproj": {
+    "C:\\Users\\thoma\\OneDrive\\Escritorio\\PHP-xampp-Organizer\\PHPOrganizer\\PHPOrganizer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\thoma\\OneDrive\\Escritorio\\PhpOrganizer\\PHPOrganizer\\PHPOrganizer.csproj",
+        "projectUniqueName": "C:\\Users\\thoma\\OneDrive\\Escritorio\\PHP-xampp-Organizer\\PHPOrganizer\\PHPOrganizer.csproj",
         "projectName": "PHPOrganizer",
-        "projectPath": "C:\\Users\\thoma\\OneDrive\\Escritorio\\PhpOrganizer\\PHPOrganizer\\PHPOrganizer.csproj",
+        "projectPath": "C:\\Users\\thoma\\OneDrive\\Escritorio\\PHP-xampp-Organizer\\PHPOrganizer\\PHPOrganizer.csproj",
         "packagesPath": "C:\\Users\\thoma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\thoma\\OneDrive\\Escritorio\\PhpOrganizer\\PHPOrganizer\\obj\\",
+        "outputPath": "C:\\Users\\thoma\\OneDrive\\Escritorio\\PHP-xampp-Organizer\\PHPOrganizer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\thoma\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,8 +83,8 @@
           "net7.0-windows7.0": {
             "targetAlias": "net7.0-windows",
             "projectReferences": {
-              "C:\\Users\\thoma\\OneDrive\\Escritorio\\PhpOrganizer\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Users\\thoma\\OneDrive\\Escritorio\\PhpOrganizer\\Entidades\\Entidades.csproj"
+              "C:\\Users\\thoma\\OneDrive\\Escritorio\\PHP-xampp-Organizer\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\thoma\\OneDrive\\Escritorio\\PHP-xampp-Organizer\\Entidades\\Entidades.csproj"
               }
             }
           }
