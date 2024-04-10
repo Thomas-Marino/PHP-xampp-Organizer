@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCrearArchivo));
             Btn_Crear = new Button();
             Txb_nombreArchivo = new TextBox();
             label1 = new Label();
@@ -68,6 +69,7 @@
             Controls.Add(Txb_nombreArchivo);
             Controls.Add(Btn_Crear);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "FormCrearArchivo";

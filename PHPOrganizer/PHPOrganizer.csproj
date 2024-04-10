@@ -6,7 +6,12 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>folder_type_php_opened_icon_129862.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="folder_type_php_opened_icon_129862.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Entidades\Entidades.csproj" />

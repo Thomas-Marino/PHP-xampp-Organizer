@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPhpOrganizer));
             Btn_AñadirArchivo = new Button();
             Btn_CrearArchivo = new Button();
             Btn_AbrirXampp = new Button();
@@ -154,6 +155,7 @@
             Controls.Add(Btn_CrearArchivo);
             Controls.Add(Btn_AñadirArchivo);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "FormPhpOrganizer";
             Text = "PHP Organizer";
