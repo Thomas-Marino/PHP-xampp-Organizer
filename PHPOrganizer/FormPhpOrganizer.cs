@@ -36,7 +36,7 @@ namespace PHPOrganizer
                     string destinationFilePath = Path.Combine(htdocsPath, Path.GetFileName(filePath));
 
 
-                    File.Copy(filePath, $"{htdocsPath}\\{Path.GetFileName(filePath)}");
+                    File.Copy(filePath, $"{htdocsPath}\\{Path.GetFileName(filePath)}", true);
 
                     MessageBox.Show("Archivo añadido con éxito");
 
