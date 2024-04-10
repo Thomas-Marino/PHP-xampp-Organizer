@@ -10,9 +10,9 @@ namespace PHPOrganizer
         {
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
-            if (!Directory.Exists("..\\..\\..\\..\\Paths"))
+            if (!Directory.Exists("Paths"))
             {
-                Directory.CreateDirectory("..\\..\\..\\..\\Paths");
+                Directory.CreateDirectory("Paths");
             }
             ApplicationConfiguration.Initialize();
             Application.Run(new FormPhpOrganizer());

@@ -22,7 +22,7 @@ namespace PHPOrganizer
                 ofd.RestoreDirectory = true;
 
                 SerializadorArchivos<string> serializadorArchivos = new SerializadorArchivos<string>();
-                string archivoContenedorRutaXampp = $"..\\..\\..\\..\\Paths\\PathXampp.json";
+                string archivoContenedorRutaXampp = $"Paths\\PathXampp.json";
                 string htdocsPath = $"{serializadorArchivos.Deserializar(archivoContenedorRutaXampp)}\\htdocs";
 
                 // Muestra el diálogo
@@ -54,10 +54,10 @@ namespace PHPOrganizer
 
         private void Btn_AbrirXampp_Click(object sender, EventArgs e)
         {
-            if (File.Exists("..\\..\\..\\..\\Paths\\PathXampp.json"))
+            if (File.Exists("Paths\\PathXampp.json"))
             {
                 SerializadorArchivos<string> serializadorArchivos = new SerializadorArchivos<string>();
-                string archivoContenedorRutaXampp = $"..\\..\\..\\..\\Paths\\PathXampp.json";
+                string archivoContenedorRutaXampp = $"Paths\\PathXampp.json";
                 string rutaXampp = serializadorArchivos.Deserializar(archivoContenedorRutaXampp);
                 Process.Start($"{rutaXampp}\\xampp-control.exe");
             }
@@ -82,7 +82,7 @@ namespace PHPOrganizer
                 {
 
                     string selectedFolderPath = fbd.SelectedPath;
-                    string archivoContenedorRutaXampp = $"..\\..\\..\\..\\Paths\\PathXampp.json";
+                    string archivoContenedorRutaXampp = $"Paths\\PathXampp.json";
 
                     // Expresión regular para buscar "xampp" en el path
                     string pattern = @"\\xampp$";
@@ -115,11 +115,11 @@ namespace PHPOrganizer
 
         private void AñadirArchivosAlForm()
         {
-            if (File.Exists($"..\\..\\..\\..\\Paths\\PathXampp.json"))
+            if (File.Exists($"Paths\\PathXampp.json"))
             {
                 flowLayoutPanel1.Controls.Clear();
                 SerializadorArchivos<string> serializadorArchivos = new SerializadorArchivos<string>();
-                string archivoContenedorRutaXampp = $"..\\..\\..\\..\\Paths\\PathXampp.json";
+                string archivoContenedorRutaXampp = $"Paths\\PathXampp.json";
                 string rutaHtdocs = $"{serializadorArchivos.Deserializar(archivoContenedorRutaXampp)}\\htdocs\\";
                 List<string> archivosObtenidos = new List<string>();
 
@@ -156,7 +156,7 @@ namespace PHPOrganizer
 
         private void ActualizarBotones()
         {
-            if (!File.Exists($"..\\..\\..\\..\\Paths\\PathXampp.json"))
+            if (!File.Exists($"Paths\\PathXampp.json"))
             {
                 Btn_AñadirArchivo.Enabled = false;
                 Btn_CrearArchivo.Enabled = false;
@@ -179,7 +179,7 @@ namespace PHPOrganizer
                 ofd.FilterIndex = 1;
                 ofd.RestoreDirectory = true;
 
-                string archivoContenedorRutaVsc = $"..\\..\\..\\..\\Paths\\PathVsc.json";
+                string archivoContenedorRutaVsc = $"Paths\\PathVsc.json";
 
                 // Muestra el diálogo
                 DialogResult result = ofd.ShowDialog();

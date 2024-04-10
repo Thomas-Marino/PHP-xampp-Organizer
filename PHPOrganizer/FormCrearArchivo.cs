@@ -42,8 +42,8 @@ namespace PHPOrganizer
             if (crearArchivo)
             {
                 SerializadorArchivos<string> serializadorArchivos = new SerializadorArchivos<string>();
-                string archivoContenedorRutaXampp = $"..\\..\\..\\..\\Paths\\PathXampp.json";
-                string archivoContenedorRutaVsc = $"..\\..\\..\\..\\Paths\\PathVsc.json";
+                string archivoContenedorRutaXampp = $"Paths\\PathXampp.json";
+                string archivoContenedorRutaVsc = $"Paths\\PathVsc.json";
                 string rutaXampp = serializadorArchivos.Deserializar(archivoContenedorRutaXampp);
                 string rutaHtdocs = $"{rutaXampp}\\htdocs";
 
