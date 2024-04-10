@@ -37,6 +37,7 @@
             label4 = new Label();
             Btn_EstablecerRuta = new Button();
             flowLayoutPanel1 = new FlowLayoutPanel();
+            Btn_RutaVSC = new Button();
             SuspendLayout();
             // 
             // Btn_AñadirArchivo
@@ -127,11 +128,22 @@
             flowLayoutPanel1.Size = new Size(562, 426);
             flowLayoutPanel1.TabIndex = 8;
             // 
+            // Btn_RutaVSC
+            // 
+            Btn_RutaVSC.Location = new Point(591, 328);
+            Btn_RutaVSC.Name = "Btn_RutaVSC";
+            Btn_RutaVSC.Size = new Size(197, 52);
+            Btn_RutaVSC.TabIndex = 9;
+            Btn_RutaVSC.Text = "Establecer ruta de visual studio code.";
+            Btn_RutaVSC.UseVisualStyleBackColor = true;
+            Btn_RutaVSC.Click += Btn_RutaVSC_Click;
+            // 
             // FormPhpOrganizer
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(Btn_RutaVSC);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(Btn_EstablecerRuta);
             Controls.Add(label4);
@@ -161,5 +173,6 @@
         private Label label4;
         private Button Btn_EstablecerRuta;
         private FlowLayoutPanel flowLayoutPanel1;
+        private Button Btn_RutaVSC;
     }
 }

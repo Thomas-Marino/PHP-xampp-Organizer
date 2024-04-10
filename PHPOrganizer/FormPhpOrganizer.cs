@@ -169,5 +169,42 @@ namespace PHPOrganizer
                 Btn_AbrirXampp.Enabled = true;
             }
         }
+
+        private void Btn_RutaVSC_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog ofd = new OpenFileDialog())
+            {
+                ofd.InitialDirectory = "c:\\";
+                ofd.Filter = "Archivos exe (*.exe)|*.exe";
+                ofd.FilterIndex = 1;
+                ofd.RestoreDirectory = true;
+
+                string archivoContenedorRutaVsc = $"..\\..\\..\\..\\Paths\\PathVsc.json";
+
+                // Muestra el diálogo
+                DialogResult result = ofd.ShowDialog();
+
+                if (result == DialogResult.OK)
+                {
+                    // Obtiene la ruta del archivo seleccionado
+                    string filePath = $"{ofd.FileName}";
+                    string pattern = @"\\Code.exe";
+
+                    // Verifica si el path seleccionado contiene "xampp"
+                    if (Regex.IsMatch(filePath, pattern, RegexOptions.IgnoreCase))
+                    {
+                        SerializadorArchivos<string> serializadorArchivos = new SerializadorArchivos<string>();
+                        serializadorArchivos.Serializar(filePath, archivoContenedorRutaVsc);
+                        MessageBox.Show("VSC Seleccionado con éxito!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error, se selecciono un archivo incorrecto. Vuelva a intentarlo.");
+
+                    }
+
+                }
+            }
+        }
     }
 }
