@@ -43,13 +43,18 @@ namespace PHPOrganizer
             {
                 SerializadorArchivos<string> serializadorArchivos = new SerializadorArchivos<string>();
                 string archivoContenedorRutaXampp = $"..\\..\\..\\..\\Paths\\PathXampp.json";
+                string archivoContenedorRutaVsc = $"..\\..\\..\\..\\Paths\\PathVsc.json";
                 string rutaXampp = serializadorArchivos.Deserializar(archivoContenedorRutaXampp);
                 string rutaHtdocs = $"{rutaXampp}\\htdocs";
 
                 string contenidoPHP = "<?php echo 'Hola, mundo!'; ?>";
                 File.WriteAllText($"{rutaHtdocs}\\{Txb_nombreArchivo.Text}.php", contenidoPHP);
                 MessageBox.Show("Archivo creado con éxito!");
-                Process.Start("D:\\Visual Studio Code\\Microsoft VS Code\\Code.exe", $"{rutaHtdocs}\\{Txb_nombreArchivo.Text}.php");
+                if (File.Exists(archivoContenedorRutaVsc))
+                {
+                    string rutaVsc = serializadorArchivos.Deserializar(archivoContenedorRutaVsc);
+                    Process.Start(rutaVsc, $"{rutaHtdocs}\\{Txb_nombreArchivo.Text}.php");
+                }
                 this.Close();
             }
         }
